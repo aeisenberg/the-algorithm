@@ -51,7 +51,7 @@ jobs:
 
     - if: matrix.language == 'java'
       run: |
-        cd converter/earlybird/core/earlybird
+        cd src/java/com/twitter/search/common/converter/earlybird
         bazel build
 
     - name: Perform CodeQL Analysis
